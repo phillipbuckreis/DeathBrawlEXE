@@ -1,0 +1,706 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings for Ned's Turkey Farm -->
+
+<settings>
+
+  <!-- general settings -->
+
+  <game name="Death Brawl: The Intergalactic Tournament"/>
+
+  <!-- renderer settings -->
+
+  <renderer width="1024" height="768" shadermodel="5_0"/>
+
+  <!-- image file names -->
+
+  <images>
+    <image src="Images\black.png"/>
+    
+    <!-- Arena 1 -->
+    <image src="Arenas\space\texture.png"/>
+    <image src="Arenas\space\background.png"/>
+    
+    <!-- Win Screen Background -->
+    <image src="Images\screens\win_screen\winscreen.png"/>
+    
+    <!-- Intro Screen -->
+    <image src="Images\screens\intro_screen\splash_screen0.png"/>
+    
+    <!-- Title Screen -->
+    <image src="Images\screens\title_screen\intro_titlescreen0.png"/>
+    
+    <!-- Character Selection Screen -->
+    <image src="Images\screens\character_selection\character_selection0.png"/>
+    
+    <!-- Arena Selection -->
+    <image src="Images\screens\arena_selection\level_selection0.png"/>
+
+    <!-- Arena 2 -->
+    <image src="Arenas\ethe\texture.png"/>
+    <image src="Arenas\ethe\background.png"/>
+
+    <!-- Arena 3 -->
+    <image src="Arenas\arena3\texture.png"/>
+    <image src="Arenas\arena3\background.png"/>
+
+    <!-- Arena 4 -->
+    <image src="Arenas\arena4\texture.png"/>
+    <image src="Arenas\arena4\background.png"/>
+
+    <!-- Arena 5 -->
+    <image src="Arenas\arena5\texture.png"/>
+    <image src="Arenas\arena5\background.png"/>
+    
+  </images>
+  
+  <!-- sprites -->
+  
+  <sprites>
+    <!-- Charlie -->
+    <sprite name="charlie" file="Images\player\charlie\charlie-" ext="png" frames="18"/>
+    <sprite name="charlie_arm" file="Images\player\charlie\charlie-arm-" ext="png" frames="1"/>
+    
+    <sprite name="charlie_bullet" file="Images\bullets\electro\electro" ext="png" frames="4"/>
+    <sprite name="charlie_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="charlie_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="charlie_portrait" file="Images\player\charlie\portrait" ext="png" frames="1" />
+    <sprite name="charlie_stock" file="Images\player\charlie\stock" ext="png" frames="1" />
+    
+    <sprite name="charlieP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="charlieS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="charlieSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+
+    <!-- Leeloo -->
+    <sprite name="leeloo" file="Images\player\leeloo\leeloo-" ext="png" frames="18"/>
+    <sprite name="leeloo_arm" file="Images\player\leeloo\leeloo-arm-" ext="png" frames="1"/>
+    
+    <sprite name="leeloo_bullet" file="Images\bullets\plasma\plasma" ext="png" frames="2"/>
+    <sprite name="leeloo_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="leeloo_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="leeloo_portrait" file="Images\player\leeloo\portrait" ext="png" frames="1" />
+    <sprite name="leeloo_stock" file="Images\player\leeloo\stock" ext="png" frames="1" />
+    
+    <sprite name="leelooP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="leelooS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="leelooSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Reaper-->
+    <sprite name="reaper" file="Images\player\reaper\reaper-" ext="png" frames="18"/>
+    <sprite name="reaper_arm" file="Images\player\reaper\reaper-arm-" ext="png" frames="1"/>
+    
+    <sprite name="reaper_bullet" file="Images\bullets\fireball\" ext="png" frames="1"/>
+    <sprite name="reaper_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="reaper_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="reaper_portrait" file="Images\player\reaper\portrait" ext="png" frames="1" />
+    <sprite name="reaper_stock" file="Images\player\reaper\stock" ext="png" frames="1" />
+
+    <sprite name="reaperP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="reaperS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="reaperSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+
+    <!-- Skull -->
+    <sprite name="skull" file="Images\player\skull\skull-" ext="png" frames="18"/>
+    <sprite name="skull_arm" file="Images\player\skull\skull-arm-" ext="png" frames="1"/>
+    
+    <sprite name="skull_bullet" file="Images\bullets\revolver\" ext="png" frames="1"/>
+    <sprite name="skull_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="skull_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="skull_portrait" file="Images\player\skull\portrait" ext="png" frames="1" />
+    <sprite name="skull_stock" file="Images\player\skull\stock" ext="png" frames="1" />
+
+    <sprite name="skullP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="skullS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="skullSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Aknaan-->
+    <sprite name="aknaan" file="Images\player\aknaan\aknaan" ext="png" frames="18"/>
+    <sprite name="aknaan_arm" file="Images\player\aknaan\arm" ext="png" frames="1"/>
+    
+    <sprite name="aknaan_bullet" file="Images\bullets\sniper\" ext="png" frames="1"/>
+    <sprite name="aknaan_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="aknaan_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="aknaan_portrait" file="Images\player\aknaan\portrait" ext="png" frames="1" />
+    <sprite name="aknaan_stock" file="Images\player\aknaan\stock" ext="png" frames="1" />
+
+    <sprite name="aknaanP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="aknaanS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="aknaanSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Khal-->
+    <sprite name="khal" file="Images\player\khal\khal" ext="png" frames="18"/>
+    <sprite name="khal_arm" file="Images\player\khal\arm" ext="png" frames="1"/>
+    
+    <sprite name="khal_bullet" file="Images\bullets\snowball\" ext="png" frames="4"/>
+    <sprite name="khal_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="khal_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="khal_portrait" file="Images\player\khal\portrait" ext="png" frames="1" />
+    <sprite name="khal_stock" file="Images\player\khal\stock" ext="png" frames="1" />
+
+    <sprite name="khalP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="khalS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="khalSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Tiny-->
+    <sprite name="tiny" file="Images\player\tiny\tiny" ext="png" frames="18"/>
+    <sprite name="tiny_arm" file="Images\player\tiny\arm" ext="png" frames="1"/>
+    
+    <sprite name="tiny_bullet" file="Images\bullets\strognar\" ext="png" frames="1"/>
+    <sprite name="tiny_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="tiny_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="tiny_portrait" file="Images\player\tiny\portrait" ext="png" frames="1" />
+    <sprite name="tiny_stock" file="Images\player\tiny\stock" ext="png" frames="1" />
+
+    <sprite name="tinyP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="tinyS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="tinySh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Vulcronoid-->
+    <sprite name="vulcronoid" file="Images\player\vulcronoid\vulcronoid" ext="png" frames="18"/>
+    <sprite name="vulcronoid_arm" file="Images\player\vulcronoid\arm" ext="png" frames="1"/>
+    
+    <sprite name="vulcronoid_bullet" file="Images\bullets\rocket\" ext="png" frames="2"/>
+    <sprite name="vulcronoid_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="vulcronoid_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="vulcronoid_portrait" file="Images\player\vulcronoid\portrait" ext="png" frames="1" />
+    <sprite name="vulcronoid_stock" file="Images\player\vulcronoid\stock" ext="png" frames="1" />
+
+    <sprite name="vulcronoidP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="vulcronoidS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="vulcronoidSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Warden-->
+    <sprite name="warden" file="Images\player\warden\warden" ext="png" frames="18"/>
+    <sprite name="warden_arm" file="Images\player\warden\arm" ext="png" frames="1"/>
+    
+    <sprite name="warden_bullet" file="Images\bullets\assault_rocket\" ext="png" frames="3"/>
+    <sprite name="warden_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="warden_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="warden_portrait" file="Images\player\warden\portrait" ext="png" frames="1" />
+    <sprite name="warden_stock" file="Images\player\warden\stock" ext="png" frames="1" />
+
+    <sprite name="wardenP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="wardenS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="wardenSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Zav-->
+    <sprite name="zav" file="Images\player\zav\zav" ext="png" frames="18"/>
+    <sprite name="zav_arm" file="Images\player\zav\arm" ext="png" frames="1"/>
+    
+    <sprite name="zav_bullet" file="Images\bullets\laser\" ext="png" frames="2"/>
+    <sprite name="zav_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="zav_shield" file="Images\shield\shield" ext="png" frames="1" />
+    
+    <sprite name="zav_portrait" file="Images\player\zav\portrait" ext="png" frames="1" />
+    <sprite name="zav_stock" file="Images\player\zav\stock" ext="png" frames="1" />
+
+    <sprite name="zavP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="zavS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="zavSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+
+    <!-- Ralfa-->
+    <sprite name="ralfa" file="Images\player\ralfa\" ext="png" frames="18"/>
+    <sprite name="ralfa_arm" file="Images\player\ralfa\arm" ext="png" frames="1"/>
+
+    <sprite name="ralfa_bullet" file="Images\bullets\charge\" ext="png" frames="1"/>
+    <sprite name="ralfa_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="ralfa_shield" file="Images\shield\shield" ext="png" frames="1" />
+
+    <sprite name="ralfa_portrait" file="Images\player\ralfa\portrait" ext="png" frames="1" />
+    <sprite name="ralfa_stock" file="Images\player\ralfa\stock" ext="png" frames="1" />
+
+    <sprite name="ralfaP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="ralfaS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="ralfaSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+
+    <!-- Zathua-->
+    <sprite name="zathua" file="Images\player\zathua\" ext="png" frames="18"/>
+    <sprite name="zathua_arm" file="Images\player\zathua\arm" ext="png" frames="1"/>
+
+    <sprite name="zathua_bullet" file="Images\bullets\shuriken\" ext="png" frames="4"/>
+    <sprite name="zathua_second_bullet" file="Images\bullets\orbital\orbitaldown" ext="png" frames="5"/>
+    <sprite name="zathua_shield" file="Images\shield\shield" ext="png" frames="1" />
+
+    <sprite name="zathua_portrait" file="Images\player\zathua\portrait" ext="png" frames="1" />
+    <sprite name="zathua_stock" file="Images\player\zathua\stock" ext="png" frames="1" />
+
+    <sprite name="zathuaP_reload" file="Images\loading_circles\reloadprimary" ext="png" frames="1"/>
+    <sprite name="zathuaS_reload" file="Images\loading_circles\reloadsecondary" ext="png" frames="1"/>
+    <sprite name="zathuaSh_reload" file="Images\loading_circles\reloadshield" ext="png" frames="1"/>
+    
+    <!-- Richoets -->
+    <sprite name="ricochet" file="Images\ricochet\ricochet" ext="png" frames="11"/>
+    
+    <!--Arena HUD -->
+    <sprite name="player_info" file="Images\screens\arena_HUD\battleinfo" ext="png" frames="1"/> 
+    
+    <!-- Win Screen -->
+    <sprite name="victory_stats" file="Images\screens\win_screen\statcat" ext="png" frames="1"/>
+    
+    <!---Splash/Lore Screen-->
+    <sprite name="lore_pictures" file="Images\screens\intro_screen\lore_picture" ext="png" frames="4"/>
+    <sprite name="ding_star" file="Images\screens\intro_screen\ding_star\" ext="png" frames="3"/>
+
+    <!--Title Screen-->
+    <sprite name="intro_title" file="Images\screens\title_screen\intro_title" ext="png" frames="1"/>
+    <sprite name="intro_gun1-" file="Images\screens\title_screen\intro_gun1-" ext="png" frames="1"/>
+    <sprite name="intro_gun2-" file="Images\screens\title_screen\intro_gun2-" ext="png" frames="1"/>
+    <sprite name="intro_skull" file="Images\screens\title_screen\intro_skull" ext="png" frames="1"/>
+    <sprite name="intro_explosion" file="Images\screens\title_screen\intro_explosion" ext="png" frames="16"/>
+    <sprite name="intro_start" file="Images\screens\title_screen\intro_start" ext="png" frames="1"/>
+    
+    <!-- Character Selection Portraits-->
+      <!-- Portraits-->
+    <sprite name="charlie_select_portrait" file="Images\player\charlie\select" ext="png" frames="1" />
+    <sprite name="leeloo_select_portrait" file="Images\player\leeloo\select" ext="png" frames="1" />
+    <sprite name="reaper_select_portrait" file="Images\player\reaper\select" ext="png" frames="1" />
+    <sprite name="skull_select_portrait" file="Images\player\skull\select" ext="png" frames="1" />
+    
+    <sprite name="character5_select_portrait" file="Images\player\tiny\select" ext="png" frames="1" />
+    <sprite name="character6_select_portrait" file="Images\player\warden\select" ext="png" frames="1" />
+    <sprite name="character7_select_portrait" file="Images\player\zav\select" ext="png" frames="1" />
+    <sprite name="character8_select_portrait" file="Images\player\khal\select" ext="png" frames="1" />
+    <sprite name="character9_select_portrait" file="Images\player\aknaan\select" ext="png" frames="1" />
+    <sprite name="character10_select_portrait" file="Images\player\vulcronoid\select" ext="png" frames="1" />
+    <sprite name="character11_select_portrait" file="Images\player\ralfa\select" ext="png" frames="1" />
+    <sprite name="character12_select_portrait" file="Images\player\zathua\select" ext="png" frames="1" />
+    
+      <!-- Frames -->
+    <sprite name="p1" file="Images\screens\character_selection\P1\p" ext="png" frames="2" />
+    <sprite name="p2" file="Images\screens\character_selection\P2\p" ext="png" frames="2" />
+    <sprite name="p3" file="Images\screens\character_selection\P3\p" ext="png" frames="2" />
+    <sprite name="p4" file="Images\screens\character_selection\P4\p" ext="png" frames="2" />
+    
+      <!-- Corner Frames -->
+    <sprite name="p1_corner" file="Images\screens\character_selection\P1\corner" ext="png" frames="2" />
+    <sprite name="p2_corner" file="Images\screens\character_selection\P2\corner" ext="png" frames="2" />
+    <sprite name="p3_corner" file="Images\screens\character_selection\P3\corner" ext="png" frames="2" />
+    <sprite name="p4_corner" file="Images\screens\character_selection\P4\corner" ext="png" frames="2" />
+    
+      <!-- Decorations-->
+    <sprite name="holopad" file="Images\screens\character_selection\holopad" ext="png" frames="1" />
+    <sprite name="light" file="Images\screens\character_selection\light" ext="png" frames="1" />
+    
+    <!-- Arena Selection -->
+    <sprite name="space_tile" file="Arenas\space\tile" ext="png" frames="1" />
+    <sprite name="ethe_tile" file="Arenas\ethe\tile" ext="png" frames="1" />
+    <sprite name="arena3_tile" file="Arenas\arena3\tile" ext="png" frames="1" />
+    <sprite name="arena4_tile" file="Arenas\arena4\tile" ext="png" frames="1" />
+    <sprite name="arena5_tile" file="Arenas\arena5\tile" ext="png" frames="1" />
+    <sprite name="arena6_tile" file="Arenas\arena6\tile" ext="png" frames="1" />
+    
+     <sprite name="space_display" file="Arenas\space\display" ext="png" frames="1" />
+    <sprite name="ethe_display" file="Arenas\ethe\display" ext="png" frames="1" />
+    <sprite name="arena3_display" file="Arenas\arena3\display" ext="png" frames="1" />
+    <sprite name="arena4_display" file="Arenas\arena4\display" ext="png" frames="1" />
+    <sprite name="arena5_display" file="Arenas\arena5\display" ext="png" frames="1" />
+    <sprite name="arena6_display" file="Arenas\arena6\display" ext="png" frames="1" />
+    
+    <!-- Buttons -->
+    <sprite name="right_trigger" file="Images\buttons\controller_icons\shoulder\right_trigger" ext="png" frames="1" />
+    <sprite name="left_trigger" file="Images\buttons\controller_icons\shoulder\left_trigger" ext="png" frames="1" />
+    
+    <sprite name="right_bumper" file="Images\buttons\controller_icons\shoulder\right_bumper" ext="png" frames="1" />
+    <sprite name="left_bumper" file="Images\buttons\controller_icons\shoulder\left_bumper" ext="png" frames="1" />
+    
+    <sprite name="start_button" file="Images\buttons\controller_icons\menu_buttons\start" ext="png" frames="1" />
+    <sprite name="back_button" file="Images\buttons\controller_icons\menu_buttons\back" ext="png" frames="1" />
+    <sprite name="a_button" file="Images\buttons\controller_icons\buttons\a" ext="png" frames="1" />
+    <sprite name="b_button" file="Images\buttons\controller_icons\buttons\b" ext="png" frames="1" />
+    
+    <sprite name="left_any" file="Images\buttons\controller_icons\sticks\left\any" ext="png" frames="1" />
+    <sprite name="dpad_any" file="Images\buttons\controller_icons\d_pad\any_press" ext="png" frames="1" />
+
+    <!-- Arena Selector-->
+    <sprite name="level_Select" file="Images\screens\arena_selection\levelselect" ext="png" frames="2" />
+    
+  </sprites>
+
+  <!-- objects-->
+
+  <objects>
+    <!-- Bodies -->
+    <object name="charlie"
+      minxspeed="-20" maxxspeed="20" 
+      minyspeed="-20" maxyspeed="20"
+            fly="1"
+            vulnerable="1"
+            frameinterval="120"
+            cycle="1"
+            animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+      <object name="leeloo"
+        minxspeed="-20" maxxspeed="20"
+        minyspeed="-20" maxyspeed="20"
+              fly="1"
+              vulnerable="1"
+              frameinterval="120"
+              cycle="1"
+              animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+    
+    <object name="reaper"
+      minxspeed="-20" maxxspeed="20"
+      minyspeed="-20" maxyspeed="20"
+            fly="1"
+            vulnerable="1"
+            frameinterval="120"
+            cycle="1"
+            animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="skull"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="aknaan"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="khal"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="tiny"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="vulcronoid"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="warden"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="zav"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="ralfa"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+    <object name="zathua"
+  minxspeed="-20" maxxspeed="20"
+  minyspeed="-20" maxyspeed="20"
+        fly="1"
+        vulnerable="1"
+        frameinterval="120"
+        cycle="1"
+        animation="0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17"
+    />
+
+
+    <!-- Arms-->
+    <object name="charlie_arm"
+            fly="1"/>
+    <object name="leeloo_arm"
+        fly="1"/>
+    <object name="reaper_arm"
+        fly="1"/>
+    <object name="skull_arm"
+        fly="1"/>
+    <object name="aknaan_arm"
+        fly="1"/>
+    <object name="khal_arm"
+        fly="1"/>
+    <object name="tiny_arm"
+        fly="1"/>
+    <object name="vulcronoid_arm"
+        fly="1"/>
+    <object name="warden_arm"
+        fly="1"/>
+    <object name="zav_arm"
+        fly="1"/>
+    <object name="ralfa_arm"
+        fly="1"/>
+    <object name="zathua_arm"
+        fly="1"/>
+
+    <!-- Primary Bullets-->
+    <object name="charlie_bullet"
+            fly="1" lifetime="400"
+              frameinterval="20"
+              cycle="1"
+              animation="0,1,2,3"/>
+    
+    <object name="leeloo_bullet"
+            fly="1" lifetime="2400"
+              frameinterval="40"
+              cycle="1"
+              animation="0,1"/>
+
+    <object name="reaper_bullet"
+        fly="1" lifetime="800"/>
+
+    <object name="skull_bullet"
+        fly="1" lifetime="400"/>
+
+    <object name="aknaan_bullet"
+        fly="1" lifetime="4000"/>
+
+    <object name="khal_bullet"
+        fly="1" lifetime="4000"
+          frameinterval="20"
+          cycle="1"
+          animation="0,1,2,3"/>
+
+    <object name="tiny_bullet"
+        fly="1" lifetime="4000"/>
+
+    <object name="vulcronoid_bullet"
+        fly="1" lifetime="2200"
+          frameinterval="20"
+          cycle="1"
+          animation="0,1"/>
+
+    <object name="warden_bullet"
+        fly="1" lifetime="400"
+          frameinterval="20"
+          cycle="1"
+          animation="0,1,2"/>
+
+    <object name="zav_bullet"
+        fly="1" lifetime="400"
+          frameinterval="20"
+          cycle="1"
+          animation="0,1"/>
+
+    <object name="ralfa_bullet"
+        fly="1" lifetime="400"/>
+
+    <object name="zathua_bullet"
+        fly="1" lifetime="400"
+          frameinterval="20"
+          cycle="1"
+          animation="0,1,2,3"/>
+    
+    <!-- Secondary Bullets-->
+    <object name="charlie_second_bullet"
+            fly="1" lifetime="800"
+            frameinterval="10"
+              cycle="1"
+              animation="0,1,2,3,4"/>
+    
+    <object name="leeloo_second_bullet"
+            fly="1" lifetime="800"
+            frameinterval="20"
+              cycle="1"
+              animation="0,1,2,3,4"/>
+
+    <object name="reaper_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="20"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="skull_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="aknaan_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="khal_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="tiny_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="vulcronoid_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="warden_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="zav_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="ralfa_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+
+    <object name="zathua_second_bullet"
+        fly="1" lifetime="800"
+        frameinterval="10"
+          cycle="1"
+          animation="0,1,2,3,4"/>
+    
+    <!-- Shields-->
+    <object name="charlie_shield"
+            fly="1"/>
+    
+    <object name="leeloo_shield"
+            fly="1"/>
+
+    <object name="reaper_shield"
+        fly="1"/>
+
+    <object name="skull_shield"
+        fly="1"/>
+
+    <object name="aknaan_shield"
+        fly="1"/>
+
+    <object name="khal_shield"
+        fly="1"/>
+
+    <object name="tiny_shield"
+        fly="1"/>
+
+    <object name="vulcronoid_shield"
+        fly="1"/>
+
+    <object name="warden_shield"
+        fly="1"/>
+
+    <object name="zav_shield"
+        fly="1"/>
+
+    <object name="ralfa_shield"
+        fly="1"/>
+
+    <object name="zathua_shield"
+        fly="1"/>
+
+    <!-- Particles-->
+    <object name="ricochet" frameinterval="5" fly="1"
+            animation="0,1,2,3,4,5,6,7,8,9,10"/>
+   
+  </objects>
+
+  <!-- instances-->
+
+  <instances>
+  </instances>
+
+  <!-- Sounds-->
+  
+  <sounds>
+  
+    <sound file="Sounds\gun.wav" instances="10"/>
+    <sound file="Sounds\Space.wav"/>
+    <sound file="Sounds\Intro.wav"/>
+    <sound file="Sounds\mDeath.wav" instances="4"/>
+    <sound file="Sounds\PulseGun.wav" instances="30"/>
+    <sound file="Sounds\victory.wav" instances="1"/>
+    <sound file="Sounds\shieldspawn.wav" instances="4"/>
+    <sound file="Sounds\battle.wav"/>
+    <sound file="Sounds\winner.wav"/>
+    <sound file="Sounds\shotgun.wav" instances="30"/>
+    <sound file="Sounds\shieldhit.wav" instances="4"/>
+    <sound file="Sounds\space8.wav"/>
+    <sound file="Sounds\start_battle_countdown_3.wav" instances="1"/>
+    <sound file="Sounds\end_battle_countdown_5.wav" instances="1"/>
+    <sound file="Sounds\reload.wav" instances="4"/>
+    <sound file="Sounds\menu.wav"/>
+    <sound file="Sounds\menu_move.wav" instances="4"/>
+    <sound file="Sounds\menu_select.wav" instances="4"/>
+    <sound file="Sounds\menu_deselect.wav" instances="4"/>
+    <sound file="Sounds\start.wav" instances="1"/>
+    <sound file="Sounds\menu_cant_move.wav" instances="4"/>
+    <sound file="Sounds\Aknaan_gun_sound.wav" instances="1"/>
+    <sound file="Sounds\Skull_gun_sound.wav" instances="18"/>
+    <sound file="Sounds\Tiny_gun_sound.wav" instances="7"/>
+    <sound file="Sounds\Vulcron_gun_sound.wav" instances="5"/>
+    <sound file="Sounds\Warden_gun_sound.wav" instances="20"/>
+    <sound file="Sounds\Reaper_gun_sound.wav" instances="25"/>
+    <sound file="Sounds\Khal_gun_sound.wav" instances="50"/>
+    <sound file="Sounds\Ralfa_gun_sound.wav" instances="50"/>
+    <sound file="Sounds\Zathua_gun_sound.wav" instances="50"/>
+    <sound file="Sounds\Zav_gun_sound.wav" instances="50"/>
+    <sound file="Sounds\City_music.wav"/>
+    <sound file="Sounds\Desert_music.wav"/>
+    <sound file="Sounds\Ethe_music.wav"/>
+    <sound file="Sounds\Space_music.wav"/>
+  </sounds>
+  
+  <!-- debugger settings -->
+
+  <debug linenumber="1" header="1">
+    <file select="1" name="debug.txt"/>
+    <debugger select="1"/>
+    <ip select="1" address="127.0.0.1" port="1617"/>
+  </debug>
+
+</settings>
+
